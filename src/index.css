@@ -177,30 +177,64 @@ body {
   
   /* Focus Styles */
   .focus-ring {
-    @apply focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+    outline: none;
+    outline-offset: 2px;
+  }
+  .focus-ring:focus {
+    box-shadow: 0 0 0 2px var(--primary-500);
   }
   
   /* Interactive States */
   .interactive {
-    @apply transition-all duration-200 ease-out hover:scale-105 active:scale-95;
+    transition-property: all;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    transform: translateZ(0);
   }
+  .interactive:hover { transform: scale(1.05); }
+  .interactive:active { transform: scale(0.95); }
   
   .interactive-subtle {
-    @apply transition-all duration-200 ease-out hover:scale-102 active:scale-98;
+    transition-property: all;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    transform: translateZ(0);
   }
+  .interactive-subtle:hover { transform: scale(1.02); }
+  .interactive-subtle:active { transform: scale(0.98); }
   
   /* Section Spacing */
   .section-py {
-    @apply py-16 md:py-24 lg:py-32;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  @media (min-width: 768px) {
+    .section-py {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .section-py {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
   }
   
   .section-px {
-    @apply px-4 sm:px-6 lg:px-8;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
+  @media (min-width: 640px) { .section-px { padding-left: 1.5rem; padding-right: 1.5rem; } }
+  @media (min-width: 1024px) { .section-px { padding-left: 2rem; padding-right: 2rem; } }
   
   /* Container */
   .container-custom {
-    @apply max-w-7xl mx-auto section-px;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -270,7 +304,8 @@ body {
 /* Responsive Design */
 @media (max-width: 640px) {
   .container-custom {
-    @apply px-4;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 

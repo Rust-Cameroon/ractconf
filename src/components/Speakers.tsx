@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { speakers } from '../data'
+import { useEffect, useState } from 'react'
 
 const Speakers: React.FC = () => {
   const containerVariants = {
@@ -24,6 +24,45 @@ const Speakers: React.FC = () => {
       } as any
     }
   }
+
+  const [speakers, setSpeakers] = useState<Array<{
+    id: number
+    name: string
+    title: string
+    company: string
+    bio?: string
+    image?: string
+    social?: {
+      twitter?: string
+      linkedin?: string
+      github?: string
+    }
+    expertise: string[]
+  }>>([])
+
+  useEffect(() => {
+    const controller = new AbortController()
+
+    async function loadSpeakers() {
+      try {
+        const response = await fetch(`${import.meta.env.BASE_URL}speakers.json`, {
+          signal: controller.signal
+        })
+        if (!response.ok) {
+          throw new Error(`Failed to load speakers.json: ${response.status}`)
+        }
+        const data = await response.json()
+        setSpeakers(Array.isArray(data) ? data : data.speakers ?? [])
+      } catch (error) {
+        if ((error as any)?.name !== 'AbortError') {
+          console.error(error)
+        }
+      }
+    }
+
+    loadSpeakers()
+    return () => controller.abort()
+  }, [])
 
   return (
     <section className="py-16 md:py-24 bg-gray-50" aria-label="Conference Speakers">

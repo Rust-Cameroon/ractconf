@@ -1,81 +1,92 @@
 [
   {
     "id": 1,
-    "name": "Dr. Sarah Johnson",
-    "title": "Senior Software Engineer",
-    "company": "Tech Corp",
-    "bio": "Expert in React and TypeScript with 10+ years of experience building scalable web applications. Passionate about mentoring and sharing knowledge with the developer community.",
+    "name": "Dr. Steve Klabnik",
+    "title": "Rust Core Team Member",
+    "company": "Rust Foundation",
+    "bio": "Core team member of the Rust programming language and co-author of 'The Rust Programming Language' book. Passionate about making Rust accessible to developers worldwide.",
     "image": "/api/placeholder/150/150",
     "social": {
-      "twitter": "@sarahj_dev",
-      "linkedin": "sarahjohnson",
-      "github": "sarahjohnson"
+      "twitter": "@steveklabnik",
+      "linkedin": "steveklabnik",
+      "github": "steveklabnik"
     },
-    "expertise": ["React", "TypeScript", "Node.js", "System Design", "Team Leadership"]
+    "expertise": ["Rust", "Systems Programming", "Memory Safety", "Open Source", "Technical Writing"],
+    "talk": "The Future of Systems Programming with Rust"
   },
   {
     "id": 2,
-    "name": "Michael Chen",
-    "title": "Product Manager",
-    "company": "Innovation Labs",
-    "bio": "Leading product strategy and development for cutting-edge solutions. Specializes in user experience design and agile methodologies.",
+    "name": "Ashley Williams",
+    "title": "Former Executive Director",
+    "company": "Rust Foundation",
+    "bio": "Former Executive Director of the Rust Foundation and advocate for diversity in tech. Expert in building inclusive developer communities and open source governance.",
     "image": "/api/placeholder/150/150",
     "social": {
-      "linkedin": "michaelchenpm"
+      "twitter": "@ag_dubs",
+      "linkedin": "ashleygwilliams",
+      "github": "ashleygwilliams"
     },
-    "expertise": ["Product Strategy", "UX Design", "Agile Methodologies", "Market Analysis"]
+    "expertise": ["Community Building", "Open Source Governance", "Diversity & Inclusion", "JavaScript", "Node.js"],
+    "talk": "Building Inclusive Developer Communities in Africa"
   },
   {
     "id": 3,
-    "name": "Emily Rodriguez",
-    "title": "DevOps Engineer",
-    "company": "Cloud Systems Inc",
-    "bio": "Cloud infrastructure expert with focus on CI/CD pipelines and container orchestration. AWS certified solutions architect.",
+    "name": "Prof. Nana Kwame",
+    "title": "Professor of Computer Science",
+    "company": "University of Ghana",
+    "bio": "Leading researcher in distributed systems and blockchain technology. Pioneer in bringing Rust education to African universities and research institutions.",
     "image": "/api/placeholder/150/150",
     "social": {
-      "twitter": "@emilydevops",
-      "github": "emilyrodriguez"
+      "twitter": "@profkwame",
+      "linkedin": "nanakwame",
+      "github": "nanakwame"
     },
-    "expertise": ["AWS", "Kubernetes", "Docker", "CI/CD", "Infrastructure as Code"]
+    "expertise": ["Distributed Systems", "Blockchain", "Rust", "Academic Research", "Higher Education"],
+    "talk": "Rust in African Academia: Opportunities and Challenges"
   },
   {
     "id": 4,
-    "name": "David Kim",
-    "title": "AI/ML Engineer",
-    "company": "Data Intelligence",
-    "bio": "Machine learning specialist with expertise in natural language processing and computer vision. PhD in Computer Science from MIT.",
+    "name": "Fatima Aliyu",
+    "title": "Senior Software Engineer",
+    "company": "Andela",
+    "bio": "Senior software engineer at Andela with expertise in building scalable backend systems. Active contributor to Rust open source projects and mentor to African developers.",
     "image": "/api/placeholder/150/150",
     "social": {
-      "linkedin": "davidkimai",
-      "github": "davidkimm"
+      "twitter": "@fatima_aliyu",
+      "linkedin": "fatimaaliyu",
+      "github": "fatimaaliyu"
     },
-    "expertise": ["Machine Learning", "Python", "TensorFlow", "NLP", "Computer Vision"]
+    "expertise": ["Backend Development", "Rust", "Microservices", "Database Design", "Mentoring"],
+    "talk": "Building High-Performance APIs with Rust and Actix"
   },
   {
     "id": 5,
-    "name": "Lisa Wang",
-    "title": "Frontend Architect",
-    "company": "Design Systems Co",
-    "bio": "Specialist in design systems and component libraries. Advocate for accessibility and inclusive design practices.",
+    "name": "Dr. Jean-Baptiste",
+    "title": "Research Scientist",
+    "company": "Ministry of Post and Telecommunications, Cameroon",
+    "bio": "Research scientist at the Ministry of Post and Telecommunications of Cameroon. Leading government initiatives for digital transformation and technology adoption in Cameroon.",
     "image": "/api/placeholder/150/150",
     "social": {
-      "twitter": "@lisawangui",
-      "github": "lisawang"
+      "linkedin": "jeanbaptiste-cameroon",
+      "github": "jeanbaptiste"
     },
-    "expertise": ["Design Systems", "React", "Accessibility", "UI/UX", "Component Libraries"]
+    "expertise": ["Digital Transformation", "Government Technology", "Research", "Policy Development", "Innovation"],
+    "talk": "Government Support for Rust Adoption in Cameroon"
   },
   {
     "id": 6,
-    "name": "James Taylor",
-    "title": "Security Engineer",
-    "company": "SecureTech",
-    "bio": "Cybersecurity expert with focus on application security and penetration testing. Certified ethical hacker and security researcher.",
+    "name": "Aisha Mohammed",
+    "title": "Full Stack Developer",
+    "company": "Tech4Africa",
+    "bio": "Full stack developer specializing in web applications and mobile development. Co-founder of Rust Nigeria community and advocate for women in tech across Africa.",
     "image": "/api/placeholder/150/150",
     "social": {
-      "linkedin": "jamestaylorsec",
-      "twitter": "@jamessecurity"
+      "twitter": "@aisha_rust",
+      "linkedin": "aishamohammed",
+      "github": "aishamohammed"
     },
-    "expertise": ["Cybersecurity", "Penetration Testing", "Application Security", "Ethical Hacking", "Risk Assessment"]
+    "expertise": ["Full Stack Development", "Rust", "WebAssembly", "Mobile Development", "Community Building"],
+    "talk": "Rust and WebAssembly: Building Fast Web Applications"
   }
 ]
 

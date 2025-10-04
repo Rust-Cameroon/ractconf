@@ -22,15 +22,15 @@ export const faqs = faqsData
 
 // Export conference metadata
 export const conferenceInfo = {
-  name: "Tech Conference 2024",
-  tagline: "Innovating the Future of Technology",
-  date: "March 15-16, 2024",
-  location: "Convention Center, Tech City",
-  description: "Join us for two days of inspiring talks, hands-on workshops, and networking with industry leaders in technology.",
+  name: "Rust Africa Campus Tour",
+  tagline: "Cameroon 2025 - Shaping Africa's Digital Future",
+  date: "13th & 14th November 2025",
+  location: "Université des Montagnes, Bangangté, West Cameroon",
+  description: "The Rust Africa Campus Tour is heading to Cameroon this November, marking a pivotal moment for Rust adoption in Africa. This event brings together students, educators, developers, and government representatives under one roof for learning, collaboration, and forward-looking discussions on how Rust can power the next generation of technology in Africa.",
   social: {
-    twitter: "@techconf2024",
-    linkedin: "tech-conference-2024",
-    website: "https://techconf2024.com"
+    twitter: "@rustafrica",
+    linkedin: "rust-africa",
+    website: "https://rustafrica.org"
   }
 }
 

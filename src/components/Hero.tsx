@@ -28,12 +28,12 @@ const Hero: React.FC = () => {
 
   return (
     <section 
-      className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-900 via-red-900 to-amber-900 overflow-hidden"
       aria-label="Conference Hero Section"
     >
       {/* Background Pattern */}
-      <div className="absolute inset-0 bg-black bg-opacity-20">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20" />
+      <div className="absolute inset-0 bg-black bg-opacity-30">
+        <div className="absolute inset-0 bg-gradient-to-r from-orange-600/20 to-red-600/20" />
       </div>
 
       {/* Animated Background Elements */}
@@ -72,7 +72,7 @@ const Hero: React.FC = () => {
         </motion.div>
 
         <motion.p 
-          className="text-xl sm:text-2xl text-blue-100 mb-4 max-w-3xl mx-auto"
+          className="text-xl sm:text-2xl text-orange-100 mb-4 max-w-3xl mx-auto"
           variants={itemVariants}
         >
           {conferenceInfo.tagline}
@@ -99,7 +99,7 @@ const Hero: React.FC = () => {
         </motion.div>
 
         <motion.p 
-          className="text-lg text-blue-100 mb-8 max-w-2xl mx-auto"
+          className="text-lg text-orange-100 mb-8 max-w-2xl mx-auto"
           variants={itemVariants}
         >
           {conferenceInfo.description}
@@ -111,7 +111,7 @@ const Hero: React.FC = () => {
         >
           <Button 
             size="lg" 
-            className="bg-white text-blue-900 hover:bg-blue-50 font-semibold px-8 py-3 text-lg"
+            className="bg-white text-orange-900 hover:bg-orange-50 font-semibold px-8 py-3 text-lg"
             aria-label="Register for the conference"
           >
             Register Now
@@ -119,7 +119,7 @@ const Hero: React.FC = () => {
           <Button 
             size="lg" 
             variant="outline"
-            className="border-white text-white hover:bg-white hover:text-blue-900 font-semibold px-8 py-3 text-lg"
+            className="border-white text-white hover:bg-white hover:text-orange-900 font-semibold px-8 py-3 text-lg"
             aria-label="Learn more about the conference"
           >
             Learn More

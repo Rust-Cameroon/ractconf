@@ -61,17 +61,12 @@ document.addEventListener("DOMContentLoaded", function() {
                                     name.className = 'speaker-name';
                                     name.textContent = speaker.Name;
 
-                                    const title = document.createElement('div');
-                                    title.className = 'speaker-title';
-                                    title.textContent = `${speaker.Title || ''} ${speaker.Company ? 'at ' + speaker.Company : ''}`;
-
                                     const linkedIn = document.createElement('a');
                                     linkedIn.href = speaker.Social.LinkedIn;
                                     linkedIn.target = '_blank';
                                     linkedIn.textContent = 'LinkedIn';
 
                                     info.appendChild(name);
-                                    info.appendChild(title);
                                     info.appendChild(linkedIn);
                                     speakerCard.appendChild(photo);
                                     speakerCard.appendChild(info);

@@ -37,7 +37,7 @@
         "time": "01:00 – 02:00 PM",
         "session": "Talk: “Fortifying Cybersecurity and Cyber-Defense for Africa’s Digital Future”",
         "context": "Discussion on Rust’s role in eliminating software vulnerabilities and strengthening cybersecurity across Africa.",
-        "speakers": ["Andrew Zeller", "Dylan"]
+        "speakers": ["John Zeller", "Dilane Bengono"]
       },
       {
         "time": "02:05 – 03:00 PM",
@@ -89,36 +89,42 @@
       },
       {
         "time": "11:15 – 12:00 PM",
+        "session": "Presentation by Francesco Ciulla",
+        "context": "Practical Rust talk by Francesco Ciulla.",
+        "speakers": ["Francesco Ciulla"]
+      },
+       {
+        "time": "12:00 – 1:00 PM",
         "session": "Live Demo",
         "context": "Practical Rust demo by Ingrid Kamga.",
         "speakers": ["Ingrid Kamga"]
       },
       {
-        "time": "12:00 – 01:00 PM",
+        "time": "01:00 – 02:00 PM",
         "session": "Lunch Break",
         "context": "",
         "speakers": []
       },
       {
-        "time": "01:05 – 02:05 PM",
+        "time": "02:05 – 03:05 PM",
         "session": "Panel: “What’s It Like to Use Rust?”",
         "context": "Discussion on Rust’s developer experience: compiler, Cargo, and productivity.",
         "speakers": ["Hermann Awatsa", "Enow Scott", "Ingrid Kamga", "Christian Yemele", "Fossouo Martial"]
       },
       {
-        "time": "02:10 – 02:55 PM",
+        "time": "03:10 – 02:55 PM",
         "session": "“Your Adventure into Rust”",
         "context": "Intro to learning resources: The Book, Rustlings, and community networks.",
         "speakers": ["Fossouo Martial"]
       },
       {
-        "time": "02:55 – 03:10 PM",
+        "time": "03:55 – 04:10 PM",
         "session": "Closing Remarks & Vote of Thanks",
         "context": "Summary and next steps by Rust Africa leadership.",
         "speakers": ["Enow Scott", "Francis Pouatcha"]
       },
       {
-        "time": "03:00 PM onwards",
+        "time": "04:15 PM onwards",
         "session": "Extended Networking & Mentorship Clinic",
         "context": "One-on-one mentoring and project idea discussions.",
         "speakers": ["All Speakers"]

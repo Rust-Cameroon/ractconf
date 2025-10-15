@@ -1,114 +1,108 @@
-body {
-    font-family: Arial, sans-serif;
+/* ==== GLOBAL RESET ==== */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+}
+
+/* ==== BODY & GLOBAL ==== */
+body {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(
+        135deg,
+        #fdeee3 0%,       /* gentle Rust peach */
+        #fffef9 35%,      /* soft neutral white */
+        #f6fff8 70%,      /* light Cameroon green tint */
+        #fdeee3 100%      /* gentle Rust peach again */
+    );
+    color: #222;
+    line-height: 1.6;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* ==== HEADINGS ==== */
+h1, h2 {
+    text-align: center;
+    margin: 40px 0 20px;
+    color: #333;
+    transition: color 0.3s ease;
+    font-weight: 700;
+    letter-spacing: -0.5px;
 }
 
 h1 {
-    text-align: center;
-    margin: 20px 0;
-    color: #333;
+    font-size: 2.4em;
+    color: #b7410e; /* Rust accent */
 }
 
+h2 {
+    font-size: 1.8em;
+    color: #00844d; /* Soft Cameroon green */
+}
+
+/* ==== SPEAKERS GRID ==== */
 .speakers-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-    padding: 20px;
-    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 35px;
+    padding: 40px 20px 80px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
+/* ==== SPEAKER CARD ==== */
 .speaker-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
     overflow: hidden;
-    transition: transform 0.2s;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    border-top: 4px solid #e69e6a; /* Lighter Rust orange */
+    animation: fadeInUp 0.6s ease forwards;
 }
 
 .speaker-card:hover {
-    transform: scale(1.05);
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    border-top-color: #fcd116; /* Cameroon yellow highlight */
 }
 
 .speaker-photo {
     width: 100%;
-    height: 200px;
+    height: 220px;
     object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-#agenda-container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
+.speaker-card:hover .speaker-photo {
+    transform: scale(1.04);
 }
 
-.agenda-day {
-    margin-bottom: 40px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.agenda-theme {
-    font-style: italic;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-.agenda-session {
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.session-time {
-    width: 150px;
-    font-weight: bold;
-    color: #333;
-}
-
-.session-details {
-    flex: 1;
-}
-
-.session-speakers {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.session-speakers .speaker-card {
-    width: 100px;
-    text-align: center;
-}
-
-.session-speakers .speaker-photo {
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-.session-speakers .speaker-info {
-    font-size: 0.9em;
-}
-
+/* ==== SPEAKER INFO ==== */
 .speaker-info {
-    padding: 15px;
+    padding: 18px;
     text-align: center;
 }
 
 .speaker-name {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin: 10px 0;
+    font-size: 1.25em;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1e1e1e;
 }
 
 .speaker-title {
-    color: #777;
-    margin: 5px 0;
+    color: #666;
+    font-size: 0.95em;
+    margin-bottom: 4px;
+}
+
+.speaker-company {
+    font-weight: 500;
+    color: #b7410e;
+    font-size: 0.9em;
 }
 
 .speaker-social {
@@ -117,7 +111,152 @@ h1 {
 
 .speaker-social a {
     text-decoration: none;
-    color: #0077b5;
-    margin: 0 5px;
+    color: #00844d;
     font-size: 1.2em;
+    margin: 0 6px;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.speaker-social a:hover {
+    color: #ce1126; /* Cameroon red accent */
+    transform: scale(1.15);
+}
+
+/* ==== EVENT DESCRIPTION ==== */
+.event-description {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    text-align: justify;
+    border-left: 5px solid #e69e6a;
+    position: relative;
+}
+
+.event-description::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 100%;
+    background: linear-gradient(90deg, #b7410e, #fcd116, #00844d);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.event-description h2 {
+    text-align: center;
+    color: #00844d;
+    margin-bottom: 15px;
+}
+
+.event-description p {
+    margin-bottom: 16px;
+    color: #333;
+}
+
+/* ==== AGENDA SECTION ==== */
+#agenda-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.agenda-day {
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+    margin-bottom: 45px;
+    padding: 25px 30px;
+    border-left: 5px solid #00844d;
+    transition: box-shadow 0.3s, border-color 0.3s;
+    background-image: linear-gradient(135deg, rgba(254, 249, 244, 0.8), rgba(255, 255, 255, 0.9));
+}
+
+.agenda-day:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border-color: #e69e6a;
+}
+
+.agenda-day h2 {
+    color: #b7410e;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.agenda-theme {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* ==== SESSIONS ==== */
+.agenda-session {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+    align-items: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+.agenda-session:hover {
+    background-color: #f9fdfb;
+}
+
+.session-time {
+    width: 160px;
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.session-time::before {
+    content: "🕒";
+    margin-right: 5px;
+}
+
+.session-details {
+    flex: 1;
+    padding-left: 15px;
+}
+
+/* ==== SESSION SPEAKERS ==== */
+.session-speakers {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.session-speakers .speaker-card {
+    width: 100px;
+    border-top: 3px solid #00844d;
+}
+
+.session-speakers .speaker-photo {
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fcd116;
+}
+
+.session-speakers .speaker-info {
+    font-size: 0.8em;
+}
+
+/* ==== ANIMATIONS ==== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

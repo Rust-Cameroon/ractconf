@@ -22,8 +22,7 @@
 }
 
 .hero-meta {
-    font-size: 2.5em; /* Reduced by 2 */
-    font-weight: bold;
+    font-size: 1.2em;
     margin-bottom: 20px;
 }
 
@@ -33,11 +32,6 @@
     color: #fff;
     text-align: center;
     margin-top: 20px;
-}
-
-.hero-meta {
-    font-size: 1.2em;
-    margin-bottom: 20px;
 }
 
 .hero-intro {
@@ -260,29 +254,21 @@ h2 {
 
 .session-time::before {
     content: "🕒";
-.speaker-intro {
-    max-width: 80vw; /* Responsive width based on viewport */
-    margin: 0 auto 20px; /* Center the text */
-    text-align: center; /* Center align the text */
-    margin: 0 auto 20px;
-    text-align: center;
-    font-size: 1.2em;
-    line-height: 1.4;
-    white-space: normal; /* Allow text to wrap */
-}
-.section-intro {
-    max-width: 800px;
-    margin: 0 auto 20px;
-    text-align: center;
-    font-size: 1.2em;
-    line-height: 1.4;
-}
     margin-right: 5px;
 }
 
 .session-details {
     flex: 1;
     padding-left: 15px;
+}
+
+.section-intro, .speaker-intro {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.4;
+    white-space: normal;
 }
 
 /* ==== SESSION SPEAKERS ==== */
@@ -309,66 +295,47 @@ h2 {
     font-size: 0.8em;
 }
 
-/* ==== ANIMATIONS ==== */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
+/* ==== FOOTER SECTION ==== */
 .footer {
-    background: #222 url('./pictures/rust-programming.png') no-repeat center center; /* Dark background with Rust logo */
-    background-size: 600px; /* Adjust size of the Rust logo */
-    padding: 40px 20px;
+    background: transparent; /* Use the body's background gradient */
+    padding: 60px 20px;
     text-align: center;
-    color: #fff;
-    border-top: 5px solid #b7410e; /* Rust accent border */
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    color: #333; /* Dark text for light background */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Lighter shadow */
 }
 
 .footer-content {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-    justify-content: center; /* Center content horizontally */
-    align-items: flex-start; /* Align items to the start vertically */
-    gap: 20px; /* Add space between images */
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center;    /* Centers the stacked items horizontally */
+    gap: 40px;              /* Adds space between the location and map sections */
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .location-info, .map-info {
-    flex: 1; /* Allow items to grow and shrink */
-    min-width: 280px; /* Minimum width for each column */
-    text-align: center; /* Center text and inline-block elements like images */
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
 }
 
 .map-image, .campus-image {
-    max-width: 100%; /* Ensure images are responsive within their containers */
-    height: auto;
-    margin: 10px auto; /* Center images and add vertical margin */
-    display: block; /* Make images block-level for margin auto to work */
-}
-
-.footer h3, .footer h4 {
-    margin: 10px 0;
-    color: #333;
-}
-.footer {
-    background-color: #f5f5f5;
-    padding: 20px;
-    text-align: center;
-}
-
-.map-image {
     max-width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    display: block;
+    border-radius: 8px;
 }
 
 .footer h3, .footer h4 {
     margin: 10px 0;
     color: #333;
 }
-.footer {
-    background-color: #f5f5f5;
-    padding: 20px;
-    text-align: center;
-}
+
+/* ==== ANIMATIONS ==== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
         transform: translateY(30px);
     }
     to {
@@ -440,3 +407,4 @@ h2 {
     filter: grayscale(0%);
     opacity: 1;
 }
+

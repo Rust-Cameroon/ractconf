@@ -325,15 +325,23 @@ h2 {
 
 .footer-content {
     display: flex;
-    justify-content: center; /* Center images horizontally */
-    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: center; /* Center content horizontally */
+    align-items: flex-start; /* Align items to the start vertically */
     gap: 20px; /* Add space between images */
 }
 
+.location-info, .map-info {
+    flex: 1; /* Allow items to grow and shrink */
+    min-width: 280px; /* Minimum width for each column */
+    text-align: center; /* Center text and inline-block elements like images */
+}
+
 .map-image, .campus-image {
-    max-width: 45%;
+    max-width: 100%; /* Ensure images are responsive within their containers */
     height: auto;
-    margin-bottom: 0; /* Remove bottom margin for horizontal alignment */
+    margin: 10px auto; /* Center images and add vertical margin */
+    display: block; /* Make images block-level for margin auto to work */
 }
 
 .footer h3, .footer h4 {
@@ -350,6 +358,16 @@ h2 {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
+}
+
+.footer h3, .footer h4 {
+    margin: 10px 0;
+    color: #333;
+}
+.footer {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
 }
         transform: translateY(30px);
     }

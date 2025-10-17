@@ -71,17 +71,16 @@
     },
     {
         "Name": "Blessing Lum",
-        "Title": "Full-stack Software Engineer adorsys",
+        "Title": "Full-stack Software Engineer @adorsys;\nScrum Master;\nRust Advocate",
         "Company": "Rust Cameroon",
         "Photo": "./pictures/Blessing.jpg",
         "Social": {
-            "LinkedIn": "https://www.linkedin.com/in/a-john-zeller",
             "Company": "https://rustcameroon.com"
         }
     },
     {
         "Name": "Christian Yemele",
-        "Title": "Co-founder, Rust Cameroon; Associate, Rust Africa; Full-stack Software Engineer, adorsys",
+        "Title": "Co-founder, Rust Cameroon;\nAssociate, Rust Africa;\nFull-stack Software Engineer, @adorsys",
         "Company": "Rust Cameroon",
         "Photo": "./pictures/Christian.jpg",
         "Social": {
@@ -110,7 +109,7 @@
     },
     {
         "Name": "Enow Sinke",
-        "Title": "Software Engineer; DevOps Expert adorsys and Rust Advocate",
+        "Title": "Software Engineer;\nDevOps Expert @adorsys and Rust Advocate",
         "Company": "Rust Cameroon",
         "Photo": "./pictures/Sinke.jpg",
         "Social": {
@@ -121,7 +120,7 @@
     {
         "Name": "Ingrid Kamga",
         "Title": "Senior Full-stack Software Engineer",
-        "Company": "adorsys",
+        "Company": null,
         "Photo": "./pictures/Ingrid.jpg",
         "Social": {
             "LinkedIn": "https://www.linkedin.com/in/ingrid-puppet/",
@@ -130,7 +129,7 @@
     },
     {
         "Name": "Tekum Emmanuella",
-        "Title": "Full-stack Software Engineer, adorsys",
+        "Title": "Full-stack Software Engineer, @adorsys;\nScrum Master;\nRust Advocate",
         "Company": "Rust Cameroon",
         "Photo": "./pictures/Ella.jpg",
         "Social": {
@@ -140,7 +139,7 @@
     },
     {
         "Name": "Assah Bismark",
-        "Title": "Full-stack Software Engineer, adorsys; Rust Advocate",
+        "Title": "Full-stack Software Engineer, @adorsys;\nRust Advocate",
         "Company": "Rust Cameroon",
         "Photo": "./pictures/Bismark.jpg",
         "Social": {
@@ -150,7 +149,7 @@
     },
     {
         "Name": "Arthur Tcheutchoua",
-        "Title": "Full-stack Software Engineer, Adorsys; Rust Advocate",
+        "Title": "Full-stack Software Engineer, @adorsys;\nRust Advocate",
         "Company": "Rust Cameroon",
         "Photo": "./pictures/Arthur.jpg",
         "Social": {
@@ -170,7 +169,7 @@
     },
     {
         "Name": "Boris Ngha",
-        "Title": "Full-stack Software Engineer, adorsys; Rust Advocate",
+        "Title": "Full-stack Software Engineer, @adorsys;\nRust Advocate",
         "Company": "Rust Cameroon",
         "Photo": "./pictures/Boris.jpg",
         "Social": {

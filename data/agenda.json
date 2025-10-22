@@ -42,8 +42,8 @@
       {
         "time": "02:05 – 03:00 PM",
         "session": "Grand Panel: “The Future of Rust in Africa – Opportunities, Challenges & the Path Forward”",
-        "context": "Panel with Francis Pouatcha, Enow Scott, Mordecai Emmanuel, Evans Yemey, and Tekum Emmanuella exploring the Rust ecosystem in Africa.",
-        "speakers": ["Francis Pouatcha", "Enow Scott", "Mordecai Emmanuel", "Evans Yemey", "Tekum Emmanuella"]
+        "context": "Panel with Francis Pouatcha, Enow Scott, Mordecai Emmanuel, Evans Yemey, Tekum Emmanuella, and Assah Bismark exploring the Rust ecosystem in Africa.",
+        "speakers": ["Francis Pouatcha", "Enow Scott", "Mordecai Emmanuel", "Evans Yemey", "Tekum Emmanuella", "Assah Bismark"]
       },
       {
         "time": "03:05 – 03:30 PM",
@@ -109,7 +109,7 @@
         "time": "02:05 – 03:05 PM",
         "session": "Panel: “What’s It Like to Use Rust?”",
         "context": "Discussion on Rust’s developer experience: compiler, Cargo, and productivity.",
-        "speakers": ["Hermann Awatsa", "Enow Scott", "Ingrid Kamga", "Christian Yemele", "Fossouo Martial"]
+        "speakers": ["Hermann Awatsa", "Arthur Tcheutchoua", "Ingrid Kamga", "Christian Yemele", "Fossouo Martial"]
       },
       {
         "time": "03:10 – 02:55 PM",
@@ -121,7 +121,7 @@
         "time": "03:55 – 04:10 PM",
         "session": "Closing Remarks & Vote of Thanks",
         "context": "Summary and next steps by Rust Africa leadership.",
-        "speakers": ["Enow Scott", "Francis Pouatcha"]
+        "speakers": ["Blessing Lum", "Enow Sinke"]
       },
       {
         "time": "04:15 PM onwards",

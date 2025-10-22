@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  nginx:
+    build:
+      context: ./nginx
+    container_name: ractconf-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      - DOMAIN=${DOMAIN}
+    volumes:
+      - ../:/usr/share/nginx/html:ro
+      - certs:/etc/letsencrypt
+      - acme-webroot:/var/www/certbot
+    restart: unless-stopped
+
+  # One-off certbot container to issue and renew certificates using the webroot method
+  certbot:
+    image: certbot/certbot:latest
+    container_name: ractconf-certbot
+    volumes:
+      - certs:/etc/letsencrypt
+      - acme-webroot:/var/www/certbot
+    entrypoint: ["/bin/sh", "-c"]
+    # Default command does nothing; scripts will run certbot as needed
+    command: ["sleep infinity"]
+
+volumes:
+  certs:
+  acme-webroot:

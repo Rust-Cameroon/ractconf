@@ -8,9 +8,10 @@ services:
       - "443:443"
     environment:
       - DOMAIN=${DOMAIN}
+      - CERT_NAME=${CERT_NAME:-${DOMAIN}}
     volumes:
       - ../:/usr/share/nginx/html:ro
-      - certs:/etc/letsencrypt
+      - ./letsencrypt:/etc/letsencrypt
       - acme-webroot:/var/www/certbot
     restart: unless-stopped
 
@@ -19,9 +20,8 @@ services:
     image: certbot/certbot:latest
     container_name: ractconf-certbot
     volumes:
-      - certs:/etc/letsencrypt
+      - ./letsencrypt:/etc/letsencrypt
       - acme-webroot:/var/www/certbot
 
 volumes:
-  certs:
   acme-webroot:

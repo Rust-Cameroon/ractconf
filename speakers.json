@@ -75,7 +75,6 @@
         "Company": "Rust Cameroon",
         "Photo": "./pictures/Blessing.jpg",
         "Social": {
-            "LinkedIn": null,
             "Company": "https://rustcameroon.com"
         }
     },
